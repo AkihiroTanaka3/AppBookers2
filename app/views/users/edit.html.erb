@@ -15,6 +15,8 @@
         <p><%= f.text_field :name, autofocus: true, id:"inputName", placeholder:"名前"%></p>
       <label for="inputImage">ProfileImage</label>
         <p><%= f.file_field :profile_image, placeholder: "プロフィール画像", accept: "image/*" %></p>
+        <label for="inputIntroduction">Introduction</label>
+        <p><%= f.text_field :introduction, rows:5 %></p>
         <p><%= f.submit "Update User" %></p>
       <% end %>
     </div>
